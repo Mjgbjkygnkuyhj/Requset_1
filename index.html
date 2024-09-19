@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> شركه البركه للاستثمار الصناعي </title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="./js/Home.js" defer></script>
+    <Style>
+        #email_div,
+        #pass_div {
+            color: red;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+    </Style>
+    <script defer></script>
+</head>
+
+<body dir="rtl">
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="#">
+                    <img src="../imge/BRK.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-title">
+                <h1>
+                    شركه البركه للاستثمار الصناعي</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="requist-title">
+        <h1>اختر طلبك </h1>
+    </div>
+    <!--الطلبات  -->
+    <div class="container">
+        <div class="card">
+
+            <div class="card-body" id="time">
+                <button class="select-button" name="time">طلب اجازه زمنيه</button>
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-body" id="ac">
+                <button class="select-button" name="ac">طلب اجازه </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- تسجيل الدخول -->
+    <div class="cover">
+        <div class="sign-in-wrapper ">
+            <div class="sign-in-title">
+                <h2>sign in</h2>
+            </div>
+            <div class="sign-in-content">
+                <form id="from" method="post">
+
+
+                    <div class="sign-in-group">
+                        <label for="email"> الايميل الشخصي</label>
+                        <input type="email" id="email" name="email_user" placeholder="أدخل الايميل الشخصي" required>
+                        <div id="email_div"></div>
+                    </div>
+                    <div class="sign-in-group">
+                        <label for="password"> كلمه السر</label>
+                        <input type="password" id="password" name="pass_user" placeholder="أدخل كلمه السر" required>
+                        <div id="pass_div"></div>
+                    </div>
+
+
+                    <button type="submit" class="submit-btn">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
