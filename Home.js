@@ -80,7 +80,7 @@ from.addEventListener("submit", (e) => {
             body: JSON.stringify(Data)
         };
 
-        fetch('../api.php', requestOptions)
+        fetch('./api.php', requestOptions)
             .then(response => response.text())
             .then(data => {
                 const dataMatch = data.match(/data: (.+)\n\n/);
